@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Sense;
+  src: url(/fonts/simple-light.ttf);
+}
+@font-face {
+  font-family: Peace;
+  src: url(/fonts/PeaceSansWebfont.ttf);
+}
+@font-face {
+  font-family: Aleo;
+  src: url(/fonts/aleo-bold-webfont.ttf);
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.login{
+  height: 100%;
+  width: 100%;
+  margin:auto;
+  background: url(img/loginPhoto.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.login .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%
+  max-width: none;
+}
+.login .inner .content{
+  margin-left: 0 auto;
+  text-align: center;
+}
+.content h1{
+  font-family: 'Sense', sans-serif;
+  color: #F9F3F4;
+  text-shadow: 0px 0px 400px #000;
+  font-size: 700%;
+  margin-bottom: 50px;
+}
+.login-btn{
+  border: solid #ffd800 3px;
+  border-radius: 9px;
+  font-family: Aleo;
+  color: #ffd800;
+  font-size: 200%;
+  padding: 10px 50px;
+  text-decoration: none;
+  margin: 20px;
+}
+.login-btn:hover{
+  color: #ffffff;
+  border: solid #ffffff 3px;
+  text-decoration: none;
+}
