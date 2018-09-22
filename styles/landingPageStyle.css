@@ -20,7 +20,7 @@ html, body{
   height: 100%;
   width: 100%;
   margin:auto;
-  background: url(/img/loginPhoto.jpg) no-repeat 50% 50%;
+  background: url(../img/loginPhoto.jpg) no-repeat 50% 50%;
   display: table;
   top: 0;
   background-size: cover;
