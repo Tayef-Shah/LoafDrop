@@ -1,1 +1,15 @@
-a
+@font-face {
+  font-family: Sense;
+  src: url(../fonts/simple-light.ttf);
+}
+@font-face {
+  font-family: Peace;
+  src: url(../fonts/PeaceSansWebfont.ttf);
+}
+@font-face {
+  font-family: Aleo;
+  src: url(../fonts/aleo-bold-webfont.ttf);
+}
+.navbar-brand{
+  font-family: Sense
+}
