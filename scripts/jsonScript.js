@@ -23,12 +23,12 @@ function printJson(json){
 }
 printJson(json);
 
-// function getItems(){
+function getName(index){
+    name = json.list[index].product_name;
+    return name;
+}
 
-//     for(var i = 0; i < parsed.length; i++){
-//         name = parsed[i].product_name;
-//         weight = parsed[i].gross_weight;
-//         price = parsed[i].shelf_width;
-//     }
-    
-// }
+function getWeight(index){
+    weight = json.list[index].net_weight;
+    return weight;
+}
