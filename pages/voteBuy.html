@@ -15,10 +15,14 @@
       <a class="navbar-brand" href="../pages/landingPage.html">LoafDrop</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Buy</a>
+            <button onclick="switchToBuy()">
+            <a class="nav-link" href="#">Buy</a>
+            </button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Vote</a>
+            <button onclick="switchToVote()">
+            <a class="nav-link" href="#">Vote</a>
+            </button>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
@@ -71,84 +75,84 @@
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/rice.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text"> White Rice - $1/l <br><button onclick="counter()" type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text"> White Rice - $1/l <br><button id="buy" onclick="counter()" type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/bread.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Bread - $1/loaf<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">White Bread - $1/loaf<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/brownrice.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Brown Rice- $2/lb<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Brown Rice- $2/lb<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/corn.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Corn - $1 cob<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Corn - $1 cob<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/milkv2.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Milk<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Milk<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/orangejuice.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Orange Juice<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Orange Juice<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/Wheat.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Wheat<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Wheat<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/baguette.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Baguette<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Baguette<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/bread flour.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Flour<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Flour<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/chicken.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Chicken<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Chicken<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/Oats.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Oats<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Oats<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/whole wheat.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Whole Wheat<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Whole Wheat<br><button id="buy"n onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
 </ul>
@@ -179,6 +183,13 @@
         var number = num.toString();
         document.getElementById("count").innerHTML = number;
     }
+    function switchToVote(){
+        document.getElementById("buy").innerHTML = "Vote";
+    }
+    function switchToBuy() {
+        document.getElementById("buy").innerHTML = "Buy Now";    
+    }
 </script>
+
   <!--<script type="text/javascript" src="../scripts/jsonScript.js"></script>-->
 </body>
