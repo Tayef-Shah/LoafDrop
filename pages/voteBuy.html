@@ -174,10 +174,12 @@
   </script> -->
 <script type="text/javascript">
     function counter(){
-        var num = parseInt(document.getElementById("count").innerHTML);
-        num++;
-        var number = num.toString();
-        document.getElementById("count").innerHTML = number;
+        if(document.getElementById("buy").innerHTML == "Buy Now"){
+            var num = parseInt(document.getElementById("count").innerHTML);
+            num++;
+            var number = num.toString();
+            document.getElementById("count").innerHTML = number;
+        }
     }
     function switchToVote(){
         document.getElementById("buy").innerHTML = "Vote";
