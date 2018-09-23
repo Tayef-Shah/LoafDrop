@@ -19,7 +19,6 @@
         <!--<a href="#" class="login-btn">Vendor</a>-->
 
 		<button type="button" class="btn btn-success login-btn" data-toggle="modal" data-target="#loginModal">User</button>
-
 		<button type="button" class="btn btn-success login-btn" data-toggle="modal" data-target="#loginModal">Vendor</button>
       </div>
     </div>
@@ -47,7 +46,12 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="submit" class="btn btn-success">Sign In</button>
+				<button id="login" type="submit" class="btn btn-success">Sign In</button>
+				<script type="text/javascript">
+					document.getElementById("login").onclick = function () {
+							location.href = "voteBuy.html";
+					};
+					</script>
 			</div>
 		</div>
 	</div>
