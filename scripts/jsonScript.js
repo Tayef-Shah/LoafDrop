@@ -1,15 +1,14 @@
 'use strict';
 
-//var json = require("./product.json")
-var json = JSON.parse("../product.json");
+var json = JSON.stringify("../product.json");
 
 var name;
 var weight;
 var price;
 
 console.log(json);
-console.log("List of items")
-function printJson(){
+
+function printJson(json){
     console.log("List of items");
     for(var i = 0; i < json.length; i++){
 
@@ -22,7 +21,7 @@ function printJson(){
         console.log(price);
     }
 }
-printJson();
+printJson(json);
 
 // function getItems(){
 
