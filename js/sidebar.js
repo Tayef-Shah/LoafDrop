@@ -10,7 +10,7 @@ $(document).ready(function() {
 $.getJSON('../product.json', function(json) {
     console.log("JSON file");
     console.log(json); // this will show the info it in firebug console
-    console.log(json.list[0].product_name);
+    table = json
 
     console.log("List of items");
     for(var i = 0; i < json.list.length; i++){
