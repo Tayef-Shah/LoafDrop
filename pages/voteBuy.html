@@ -3,42 +3,200 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LoafDrop</title>
-	<link rel="stylesheet" type="text/css" href="../styles/voteSellStyle.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/voteBuyStyle.css" />
   <link rel="shortcut icon" type="image/png" href="../img/logo.png"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand" href="#">LoafDrop</a>
-  <img src="../img/logo.png" alt="" height="30" width="30">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Buy<span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">LoafDrop</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vote</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+          <div class="sidebar-header">
+          </div>
+          <ul class="list-unstyled components">
+              <p id="sidebarHeader">Filters</p>
+              <li class="active">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                          <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#"id="sidebar-items">About</a>
+              </li>
+              <li>
+                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="sidebar-items">Pages</a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <li>
+                          <a href="#">Page 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Page 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Page 3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#"id="sidebar-items">Portfolio</a>
+              </li>
+              <li>
+                  <a href="#" id="sidebar-items">Contact</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+  <div class="gallery-section">
+    <ul class="gallery-grid">
+      <!-- <li class="gallery-grid-li">
+        <div class="gallery-box gallery-img-15">
+          <div class="gallery-info">
+            <h3>OrderTrackr</h3>
+            <p>Online retail is an ever expanding market and this is for those business that need an app to track all of their shipments. It parses a JSON file to obtain and relay order information.</p>
+            <button type="button" class="btn btn-light">Skills Developed</button>
+          </div>
+          <div class="gallery-info back">
+            <p>
+              <b class="gallery-back-heading">What I learned:</b>
+              <br>Parsing and processiong JSON data,
+              <br>Using RecyvlerView to increase efficiency,
+              <br>Using multiple adapters,
+              <br>Sorting ArrayLists
+            </p>
+            <button type="button" class="btn btn-light">Hide Details</button>
+          </div>
+        </div>
+      </li> -->
+      <li class="gallery-grid-li" id="contacts">
+        <div class="gallery-box gallery-img-4">
+          <div class="gallery-info">
+            <h3>Contacts</h3>
+            <p>This was developed for users to uses to store and edit their contacts Despite how simple it may sound there were many hurdles and new aspects of app development that I learned.</p>
+            <button type="button" class="btn btn-light">Skills Developed</button>
+          </div>
+          <div class="gallery-info back">
+            <p>
+              <b class="gallery-back-heading">What I learned:</b>
+              <br>Multi-activity communication,
+              <br> Gaining access to internal storage,
+              <br>Saving images as bitmaps,
+              <br>SQLite, <br> Bettered my usage of OOP,
+              <br>The importance of planning prior to coding
+            </p>
+            <button type="button" class="btn btn-light">Hide Details</button>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Vote</a>
+      <li class="gallery-grid-li">
+        <div class="gallery-box gallery-img-1">
+          <div class="gallery-info">
+            <h3>Calculator</h3>
+            <p>This is a simply calculator app I developed. It was a great method of increasing my knowledge in Android Studio</p>
+            <button type="button" class="btn btn-light">Skills Developed</button>
+          </div>
+          <div class="gallery-info back">
+            <p>
+              <b class="gallery-back-heading">What I learned:</b>
+              <br>Setting an icon for the app,
+              <br>Using a linear layout,
+              <br>Searching for and solving corner cases,
+              <br>Animations,
+              <br>Debugging
+            </p>
+            <button type="button" class="btn btn-light">Hide Details</button>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+      <li class="gallery-grid-li">
+        <div class="gallery-box gallery-img-3">
+          <div class="gallery-info">
+            <h3>WeatherTrac</h3>
+            <p>This app shows the weather using an open source API. This was my first attempt at using an API and reading JSON data. It proved to be a great learning experience.</p>
+            <button type="button" class="btn btn-light">Skills Developed</button>
+          </div>
+          <div class="gallery-info back">
+            <p>
+              <b class="gallery-back-heading">What I learned:</b>
+              <br> Helped cement my OOP skills,
+              <br> Implementing the use of an API using an API key,
+              <br> Learned how API urls are structured,
+              <br> Reading and using JSON data
+            </p>
+            <button type="button" class="btn btn-light">Hide Details</button>
+          </div>
+        </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+      <li class="gallery-grid-li">
+        <div class="gallery-box gallery-img-2">
+          <div class="gallery-info">
+            <h3>Tic-Tac-Toe</h3>
+            <p>This was my first app I ever developed - giving me a taste of Android App Development. Since then I have loved making Android apps</p>
+            <button type="button" class="btn btn-light">Skills Developed</button>
+          </div>
+          <div class="gallery-info back">
+            <p>
+              <b class="gallery-back-heading">What I learned:</b>
+              <br> Helped me gain confidence and develop strong app development fundementals,
+              <br> Formating XMLs,
+              <br> Click listeners,
+              <br> Loading external images efficently
+            </p>
+            <button type="button" class="btn btn-light">Hide Details</button>
+          </div>
         </div>
       </li>
     </ul>
   </div>
-</nav>
+  <div class="work-wrapper">
+    <div class="work-subheadings" id="web-dev">
+      <h1>Front-End Web Devlopment</h1>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/sidebar.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
