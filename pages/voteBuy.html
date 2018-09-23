@@ -66,7 +66,7 @@
           </ul>
       </nav>
   </div>
-  <ul id="rig">
+  <ul id="rig" onload="getPrice()">
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/rice.jpg">
@@ -99,7 +99,7 @@
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/milkv2.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">Milk<br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Milk - <b id="price">$1</b><br><button id="buy" onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
@@ -186,6 +186,9 @@
     }
     function switchToBuy() {
         document.getElementById("buy").innerHTML = "Buy Now";    
+    }
+    function getPrice(){
+        document.getElementById("price").innerHTML = (Math.random()*10 + 1).toString();
     }
 </script>
 
