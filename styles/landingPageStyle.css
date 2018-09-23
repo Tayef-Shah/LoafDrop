@@ -1,14 +1,14 @@
 @font-face {
   font-family: Sense;
-  src: url(/fonts/simple-light.ttf);
+  src: url(../fonts/simple-light.ttf);
 }
 @font-face {
   font-family: Peace;
-  src: url(/fonts/PeaceSansWebfont.ttf);
+  src: url(../fonts/PeaceSansWebfont.ttf);
 }
 @font-face {
   font-family: Aleo;
-  src: url(/fonts/aleo-bold-webfont.ttf);
+  src: url(../fonts/aleo-bold-webfont.ttf);
 }
 html, body{
   margin: 0;
@@ -20,7 +20,7 @@ html, body{
   height: 100%;
   width: 100%;
   margin:auto;
-  background: url(/img/loginPhoto.jpg) no-repeat 50% 50%;
+  background: url(../img/loginPhoto.jpg) no-repeat 50% 50%;
   display: table;
   top: 0;
   background-size: cover;
@@ -28,7 +28,7 @@ html, body{
 .login .inner{
   display: table-cell;
   vertical-align: middle;
-  width: 100%
+  width: 100%;
   max-width: none;
 }
 .login .inner .content{
@@ -40,6 +40,12 @@ html, body{
   color: #F9F3F4;
   text-shadow: 0px 0px 400px #000;
   font-size: 700%;
+}
+.content h2{
+  font-family: 'Sense', sans-serif;
+  color: #F9F3F4;
+  text-shadow: 0px 0px 400px #000;
+  font-size: 200%;
   margin-bottom: 50px;
 }
 .login-btn{
@@ -48,7 +54,7 @@ html, body{
   font-family: Aleo;
   color: #ffd800;
   font-size: 200%;
-  padding: 10px 50px;
+  padding: 8px 30px;
   text-decoration: none;
   margin: 20px;
 }

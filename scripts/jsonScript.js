@@ -1,52 +1,26 @@
 'use strict';
 
-const parsed = jsonText => JSON.parse("../product.json");
+//var json = require("./product.json")
+var parsed = JSON.parse("../product.json");
 
-var name = product_name;
-var weight = gross_weight;
-var price = shelf_width;
-var table;
+var name = json.product_name;
+var weight = json.gross_weight;
+var price = json.shelf_width;
+
+function printJson(){
+
+    for(var i = 0; i < parsed.length; i++){
+        console.log(parsed[i]);
+    }
+}
+printJson();
 
 function getItems(){
 
-    // EXTRACT VALUE FOR HTML HEADER. 
-    // ('Book ID', 'Book Name', 'Category' and 'Price')
-    var table = [];
-    for (var i = 0; i < parsed.length; i++) {
-        for (var key in parsed[i]) {
-            if (table.indexOf(key) === -1) {
-                table.push(key);
-            }
-        }
+    for(var i = 0; i < parsed.length; i++){
+        name = parsed[i].product_name;
+        weight = parsed[i].gross_weight;
+        price = parsed[i].shelf_width;
     }
-
-    // CREATE DYNAMIC TABLE.
-    var table = document.createElement("table");
-
-    // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-    var tr = table.insertRow(-1);                   // TABLE ROW.
-
-    for (var i = 0; i < table.length; i++) {
-        var th = document.createElement("th");      // TABLE HEADER.
-        th.innerHTML = table[i];
-        tr.appendChild(th);
-    }
-
-    // ADD JSON DATA TO THE TABLE AS ROWS.
-    for (var i = 0; i < myBooks.length; i++) {
-
-        tr = table.insertRow(-1);
-
-        for (var j = 0; j < table.length; j++) {
-            var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = myBooks[i][table[j]];
-        }
-    }
-
-    // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-    var divContainer = document.getElementById("showData");
-    divContainer.innerHTML = "";
-    divContainer.appendChild(table);
     
 }
