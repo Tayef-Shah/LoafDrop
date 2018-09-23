@@ -23,7 +23,7 @@
 }
 
 #itemCount {
-    width: 30px; 
+    width: 30px;
     height: 30px;
     color: #fff;
 }
@@ -150,6 +150,10 @@ a.article:hover {
   margin-right: 20px;
 }
 
+#itemCount{
+  margin-right: 10px;
+  list-style: none;
+}
 /* The wrapper for each item */
 .rig-cell {
     box-shadow:0 0 6px rgba(0,0,0,0.3);
