@@ -48,18 +48,22 @@ html, body{
   font-size: 200%;
   margin-bottom: 50px;
 }
+
+
 .login-btn{
-  border: solid #ffd800 3px;
-  border-radius: 9px;
-  font-family: Aleo;
-  color: #ffd800;
-  font-size: 200%;
-  padding: 8px 30px;
-  text-decoration: none;
-  margin: 20px;
+  border: solid #ffd800 3px !important;
+  border-radius: 9px !important;
+  font-family: Aleo !important;
+  color: #ffd800 !important;
+  font-size: 200% !important;
+  padding: 8px 30px !important;
+  text-decoration: none !important;
+  margin: 20px !important;
+  background: transparent !important;
 }
+
 .login-btn:hover{
-  color: #ffffff;
-  border: solid #ffffff 3px;
-  text-decoration: none;
+  color: #ffffff !important;
+  border: solid #ffffff 3px !important;
+  text-decoration: none !important;
 }
