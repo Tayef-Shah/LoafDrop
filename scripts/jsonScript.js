@@ -1,21 +1,21 @@
 'use strict';
 
 //var json = require("./product.json")
-var parsed = JSON.parse("../product.json");
+var json = JSON.parse("../product.json");
 
 var name;
 var weight;
 var price;
 
-console.log(parsed.list[0]);
-
+console.log(json);
+console.log("List of items")
 function printJson(){
+    console.log("List of items");
+    for(var i = 0; i < json.length; i++){
 
-    for(var i = 0; i < parsed.length; i++){
-        
-        name = parsed.list[i].product_name;
-        weight = parsed.list[i].gross_weight;
-        price = parsed.list[i].shelf_width;
+        name = toString(json.list[i].product_name);
+        weight = json.list[i].net_weight;
+        price = json.list[i].shelf_width;
 
         console.log(name);
         console.log(weight);
