@@ -34,6 +34,10 @@
           </div>
         </li> -->
       </ul>
+      <li id="itemCount">
+        <a id="count">0</a>
+      </li>
+      <img id="shoppingcart" src="../img/shioppingcart.png" width="30" height="30" alt="">
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -48,13 +52,16 @@
           <ul class="list-unstyled components">
               <p id="sidebarHeader">Filters</p>
               <li>
-                  <a href="#"id="sidebar-items">About</a>
+                  <a href="#"id="sidebar-items">Dairy</a>
               </li>
               <li>
-                  <a href="#"id="sidebar-items">Portfolio</a>
+                  <a href="#"id="sidebar-items">Grains</a>
               </li>
               <li>
-                  <a href="#" id="sidebar-items">Contact</a>
+                  <a href="#" id="sidebar-items">Drinks</a>
+              </li>
+              <li>
+                  <a href="#" id="sidebar-items">Meats</a>
               </li>
           </ul>
       </nav>
@@ -64,84 +71,84 @@
         <a class="rig-cell" href="#">
             <img class="rig-img" src="../img/rice.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<span id="name"></span><br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text"> White Rice - $1/l <br><button onclick="counter()" type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/bread.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">White Bread - $1/loaf<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/brownrice.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Brown Rice- $2/lb<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/corn.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Corn - $1 cob<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/milkv2.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Milk<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/orangejuice.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Orange Juice<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/Wheat.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Wheat<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/baguette.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Baguette<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/bread flour.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Flour<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/chicken.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Chicken<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/Oats.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Oats<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
-            <img class="rig-img" src="../img/rice.jpg">
+            <img class="rig-img" src="../img/whole wheat.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">White Rice - $2/lb<br> <button type="button" class="btn btn-success">Buy Now</button></span>
+            <span class="rig-text">Whole Wheat<br><button onclick="counter()" button type="button" class="btn btn-success">Buy Now</button></span>
         </a>
     </li>
 </ul>
@@ -158,9 +165,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../js/sidebar.js">
-    var name;
-    document.getElementById("myText").innerHTML = name;
-  </script>
+  <script type="text/javascript" src="../js/sidebar.js"></script>
+  <!-- <script type="text/javascript">
+      function counter(init){
+          var num = init+1;
+          document.getElementById("count").innerHTML = num;
+      }
+  </script> -->
+<script type="text/javascript">
+    function counter(){
+        var num = parseInt(document.getElementById("count").innerHTML);
+        num++;
+        var number = num.toString();
+        document.getElementById("count").innerHTML = number;
+    }
+</script>
   <!--<script type="text/javascript" src="../scripts/jsonScript.js"></script>-->
 </body>
